@@ -41,9 +41,13 @@
 }
 
 .Header-alert {
-  color: #33b13a;
+  color: var(--color4);
   font-size: 14px;
-  margin-left: 5px;
+  margin-left: 1px;
+  background-color: var(--color2);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
 }
 .Header a {
   text-decoration: none;

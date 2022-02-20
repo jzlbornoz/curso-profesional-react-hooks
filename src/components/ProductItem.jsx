@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/components/Products.css';
 
-const ProductItem = ({ item }) => {
+const ProductItem = ({ item , handleAddToCart}) => {
   return (
     <div className="Products-item">
       <img src={item.image} alt={item.title} />
@@ -11,7 +11,7 @@ const ProductItem = ({ item }) => {
         <p>{item.description}</p>
       </div>
       <div>
-        <button type='button' className='Product-button'>Comprar</button>
+        <button type='button' className='Product-button' onClick={handleAddToCart(item)}>Comprar</button>
       </div>
     </div>
   )
