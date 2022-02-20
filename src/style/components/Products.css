@@ -1,0 +1,65 @@
+.Products-items {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  grid-row-gap: 1.5em;
+  display: grid;
+}
+
+@media (max-width: 1000px){
+	.Products-items{
+		display: flex;
+    flex-wrap: wrap; /*este flex wrap funciona como un mediaqueri*/
+    justify-content: center;
+	}
+}
+
+.Products-item {
+  text-decoration: none;
+  box-shadow: 8px 14px 38px rgba(39,44,49,0.06), 1px 3px 8px rgba(39,44,49,0.03);
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding: 8px;
+  border: solid 1px var(--color4);
+}
+
+.Products-item-info {
+  padding: 10px;
+}
+.Products-item-info h2 {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Product-price{
+  color: var(--color5);
+  font-weight: bold;
+}
+.Products-item-info p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.Products-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  object-fit: contain;
+}
+.Product-button {
+  background-color: var(--color3);
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+  border: 0px;
+  outline: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color2);
+}
+
+.Product-button:hover{
+  background-color: var(--color6);
+}

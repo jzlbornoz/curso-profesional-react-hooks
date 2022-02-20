@@ -1,0 +1,54 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--color4);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1000px){
+  .Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+  }
+}
+
+.Header-title:hover{
+  cursor: pointer;
+}
+
+.Header-checkout {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  width: 30px;
+  margin: 0 0 0 0.5em;
+}
+
+.Header-checkout a:hover {
+  color: var(--color4);
+}
+
+
+@media (max-width: 1000px){
+  .Header-checkout{
+    display: flex;
+    justify-content: end;
+
+  }
+}
+
+.Header-alert {
+  color: #33b13a;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.Header a {
+  text-decoration: none;
+  color: var(--color2);
+
+}
+
+

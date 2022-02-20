@@ -1,0 +1,10 @@
+.Success {
+  margin: 0 0 4em 0;
+  background-color: var(--color2);
+  color: var(--color3);
+  padding: 10px;
+  border-radius: 6px;
+}
+.Success-map {
+  margin: 10px 0 0 0;
+}
