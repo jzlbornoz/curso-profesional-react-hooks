@@ -84,3 +84,14 @@ a {
   color: var(--color2);
   font-weight: normal;
 }
+
+.Checkout-empty{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.empty-h3{
+  font-size: 25px;
+}
