@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import {AppContext} from '../context/AppContext';
 import '../style/components/Payment.css';
 
 const Payment = () => {
   const {state} = useContext(AppContext);
-  const {cart} = state
+  const {cart , buyer} = state
   return (
     <div className="Payment">
       <div className="Payment-content">
@@ -18,10 +19,10 @@ const Payment = () => {
           </div>
         )) }
         <div className="Payment-button">
-          PAYPAL
+          <Link to='/checkout/success'> <p>PAYPAL</p> </Link>
         </div>
         <div className="Payment-button2">
-          Credit Card
+        <Link to='/checkout/success'> <p>Credit card</p> </Link>
         </div>
       </div>
       <div className="Payment sidebar">
