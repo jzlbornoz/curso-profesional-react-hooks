@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
+import { Empty } from '../components/Empty';
 import '../style/components/Checkout.css'
 
 const Checkout = () => {
@@ -23,10 +24,8 @@ const Checkout = () => {
     <div className="Checkout">
       <div className="Checkout-content">
         {cart.length > 0 ? <h3>Lista de pedidos:</h3> :
-          <div className="Checkout-empty">
-            <h3 className='empty-h3'>Sin pedidos</h3>
-            <i className="fa-solid fa-triangle-exclamation fa-2xl" title='Sin pedidos' />
-          </div>}
+          <Empty />
+          }
         {cart.map((item) => (
           <div className="Checkout-item" >
             <div className="Checkout-element">

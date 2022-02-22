@@ -94,6 +94,8 @@ input {
 }
 .Information-buttons {
   margin: 10px 0 0 ;
+  display: flex;
+  align-items: flex-end;
 }
 .Information-back {
   background-color: var(--color4);
@@ -103,18 +105,21 @@ input {
   cursor: pointer;
 }
 
-.Information-next {
- background-color: var(--color5);
- color: var(--color2);
- padding: 6px;
- border-radius: 7px;
- cursor: pointer;
-}
+
 
 .Information-back:hover{
   background-color: var(--color3);
 }
 
-.Information-next:hover{
+.Information-next button:hover{
   background-color: var(--color6);
+}
+
+.Information-next button {
+background-color: var(--color5);
+ color: var(--color2);
+ border-radius: 5px;
+ border: solid 1px var(--color2);
+ padding: 7px;
+ font-size: 0.9rem;
 }

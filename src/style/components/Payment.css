@@ -13,7 +13,6 @@
 }
 .Payment-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .Payment-item .fas {
@@ -28,11 +27,37 @@
 }
 .Payment-element {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color3);
 }
-.Payment-element h4 {
-  margin: 0;
+.Payment-button{
+  background-color: #00457c;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #008cff;
+  font-weight: 900;
+}
+
+.Payment-button:hover{
+  background-color: #008cff;
+  color: #00457c;
+}
+
+.Payment-button2{
+  background-color: #000000;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.Payment-button2:hover{
+  background-color: #1b1b1b;
 }
