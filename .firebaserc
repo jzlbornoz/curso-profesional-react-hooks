@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "platzi-conf-store-2d21c"
-  }
+    "default": "platzi-conf-store-2d21c",
+    "platziStore": "platzi-conf-store-2d21c"
+  },
+  "targets": {}
 }
