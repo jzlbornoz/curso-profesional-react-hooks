@@ -1,7 +1,18 @@
 {
   "projects": {
-    "default": "platzi-conf-store-2d21c",
-    "platziStore": "platzi-conf-store-2d21c"
+    "default": "platzi-conf-store-2d21c"
   },
-  "targets": {}
+  "targets": {
+    "platzi-conf-store-2d21c":{
+      "hosting": {
+        "production": [
+          "platzi-conf-store-2d21c"
+        ],
+        "development": [
+          "platzi-conf-store-2d21c"
+        ]
+    }
+  }
 }
+}
+

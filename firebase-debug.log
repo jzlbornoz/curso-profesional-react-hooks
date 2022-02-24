@@ -1,0 +1,29 @@
+[debug] [2022-02-24T11:19:37.922Z] ----------------------------------------------------------------------
+[debug] [2022-02-24T11:19:37.926Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\javie\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy -P production
+[debug] [2022-02-24T11:19:37.927Z] CLI Version:   10.2.1
+[debug] [2022-02-24T11:19:37.927Z] Platform:      win32
+[debug] [2022-02-24T11:19:37.927Z] Node Version:  v14.17.6
+[debug] [2022-02-24T11:19:37.929Z] Time:          Thu Feb 24 2022 07:19:37 GMT-0400 (Venezuela Time)
+[debug] [2022-02-24T11:19:37.929Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-24T11:19:38.060Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-24T11:19:38.060Z] > authorizing via signed-in user (javieraap10@gmail.com)
+[debug] [2022-02-24T11:19:38.061Z] [iam] checking project production for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-24T11:19:38.065Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/production:testIamPermissions [none]
+[debug] [2022-02-24T11:19:38.065Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/production:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-24T11:19:38.769Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/production:testIamPermissions 200
+[debug] [2022-02-24T11:19:38.770Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/production:testIamPermissions {}
+[debug] [2022-02-24T11:19:38.770Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project production:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-02-24T11:19:38.772Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/production [none]
+[debug] [2022-02-24T11:19:39.241Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/production 403
+[debug] [2022-02-24T11:19:39.241Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/production {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-02-24T11:19:39.242Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-02-24T11:19:39.425Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\javie\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\javie\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: Failed to get Firebase project production. Please make sure the project exists and your account has permission to access it.
